@@ -234,7 +234,7 @@ export default definePlugin({
         customIDtoName = new Map(JSON.parse(settings.store.mappingsJSON));
         addMessageAccessory("attachment-snowflake-info", (props: Record<string, any>) => {
             const attachments = getAttachments(props.message);
-            if (attachements.length === 0) return null;
+            if (attachments.length === 0) return null;
 
             const elements = attachments.map((element: Attachment, index: number) => {
                 return (
