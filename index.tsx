@@ -244,7 +244,7 @@ export default definePlugin({
                 );
             });
             return (<div>{elements}</div>);
-        }, 2);
+        }, -1);
     },
 
     createFooter(name: string, channel_id: string, snowflake: string) {
